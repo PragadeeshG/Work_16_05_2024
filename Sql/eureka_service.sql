@@ -1,0 +1,15 @@
+create table if not exists eureka_service(
+server_port Integer not null,
+register_with_eureka varchar(255) null,
+health_check_url varchar(255) null,
+same_zone varchar(255) null,
+fetch_registry varchar(255) null,
+locale Integer null,
+default_zone varchar(255) null,
+lease_duration varchar(255) null,
+lease_renewal_duration varchar(255) null,
+host_name Integer null,
+health_check_handler varchar(255) null,
+app_context varchar(255) null,
+gracefull_shutdown varchar(255) null,
+constraint eureka_service_pk primary key(server_port));

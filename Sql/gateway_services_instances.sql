@@ -1,0 +1,15 @@
+create table if not exists gateway_services_instances(
+service_code varchar(255) not null,
+service_name varchar(255) null,
+application_reg char null,
+application_id Integer null,
+application_name varchar(255) null,
+ami varchar(255) null,
+availability_zones varchar(255) null,
+status varchar(255) null,
+instance_count Integer null,
+secure_port Integer null,
+secure_host varchar(255) null,
+secure_protocol varchar(255) null,
+remarks varchar(255) null,
+constraint gateway_services_instances_pk primary key(service_code));
